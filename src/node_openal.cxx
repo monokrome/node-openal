@@ -17,7 +17,7 @@ public:
     OpenAL::persistent_function_template = v8::Persistent<FunctionTemplate>::New(local_function_template);
     OpenAL::persistent_function_template->InstanceTemplate()->SetInternalFieldCount(1);
     OpenAL::persistent_function_template->SetClassName(v8::String::NewSymbol("OpenAL"));
-	}
+  }
 
   static Handle<Value> New(const Arguments& args) {
     HandleScope scope;
@@ -29,10 +29,10 @@ public:
   }
 
   /**
-	 * Buffer functions.
-	 */
+   * Buffer functions.
+   */
   static void GenBuffers(const Arguments& args) {
-	}
+  }
 };
 
 v8::Persistent<FunctionTemplate> OpenAL::persistent_function_template;
